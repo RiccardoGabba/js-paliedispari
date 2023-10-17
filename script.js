@@ -1,22 +1,23 @@
-btn.addEventListener('click'), function(){ 
-function palindromo(){
+const btn = document.getElementById('btn');
 
-        const domanda = document.getElementById('polindromo').value;
-    
-        for(let i = 0; i < domanda.lenght; i++){
 
-        }if (domanda[i] !== domanda(domanda.lenght - 1 - i)){
-            innerHTML = domanda + '' + 'non è un polindromo'
+btn.addEventListener('click', function(){
+    let stringa = document.getElementById('nome').value;
+    let parola = stringa;
+    for (let i = 0; i < parola.length; i++) {
+        
+        if(stringa[i] !== stringa[parola.length - 1 - i]){
+            console.log('la parola non è polindroma')
             return false;
         }
-    }
+    } 
+    console.log('la parola è polindroma')
+    return true; 
+})
 
-    result.innerHTML = domanda + '' + 'è un polindromo'
-    return true;
-}
 
-const btn = document.querySelector('btn');
-const wrapper = document.getElementById('wrapper');
-let scritta = document.createElement('div')
-wrapper.append(scritta);
+
+
+
+
 
